@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app {
+  display: flex;
+  flex-direction: row;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: aquamarine;
+}
+
+.info {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: salmon;
+}
+
+.wrap {
+  margin: 15px 0;
+}
+
+.card {
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px grey;
+}
+
+.card > * {
+  margin: 7px 0;
+}
+
+.card:hover {
+  background-color: silver;
+}
+
+.btns {
+  width: 75%;
+  display: flex;
+}
+
+input {
+  font-size: 25px;
+  padding: 5px 0;
+  width: 400px;
+}
+
+button {
+  padding: 10px;
+  width: 100px;
+  flex: 1;
+}
+
+.author {
+  margin: 20px auto;
+  max-width: 300px;
+  padding: 5px 0;
+  text-align: center;
+  border-radius: 7px;
+  position: relative;
+  background-color: cornflowerblue;
+  box-shadow: 1px 1px 5px silver;
+}
+
+.post-card {
+  border-radius: 7px;
+  padding: 20px;
+  margin: 5px auto;
+  background-color: #ff9;
+  box-shadow: 1px 1px 5px silver;
 }
